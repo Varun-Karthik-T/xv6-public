@@ -20,3 +20,9 @@
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+#define SYS_getprocinfo  24
+#define SYS_getlogininfo  25  
+#define SYS_gettime  23
+#define SYS_mv  27
+#define SYS_getdate  28
+#define SYS_df  29

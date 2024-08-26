@@ -23,6 +23,11 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+int getprocinfo(void);
+int getlogininfo(void);
+int getpid(void);
+int getdate(struct rtcdate *r);
+
 
 // ulib.c
 int stat(const char*, struct stat*);

@@ -29,3 +29,9 @@ SYSCALL(getpid)
 SYSCALL(sbrk)
 SYSCALL(sleep)
 SYSCALL(uptime)
+SYSCALL(getprocinfo)
+SYSCALL(getlogininfo)
+SYSCALL(getdate)
+
+
+

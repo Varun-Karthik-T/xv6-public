@@ -103,6 +103,12 @@ extern int sys_unlink(void);
 extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
+extern int sys_getprocinfo(void);
+extern int sys_getprocinfo(void);
+extern int sys_getlogininfo(void);
+extern int sys_getpid(void);
+extern int sys_getdate(void);
+
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -126,6 +132,11 @@ static int (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
+[SYS_getprocinfo]    sys_getprocinfo,
+[SYS_getlogininfo]    sys_getlogininfo,
+[SYS_getpid]    sys_getpid,
+[SYS_getdate]    sys_getdate,
+
 };
 
 void
